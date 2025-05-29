@@ -1,0 +1,28 @@
+#addEditClient label.error {
+	position: absolute;
+	font-size: 0.875em;
+	color: #9c9fa6 !important;
+}
+
+#contracts .card .card-body,
+#contacts .card .card-body {
+    min-height: 400px;
+}
+
+#contracts .link-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #212529;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    padding: 0.3rem;
+}
+
+#contracts .link-icon:hover {
+    background-color: #3e4b5b;
+    color: #ffffff;
+}
+/** Сгенерировать */
+#okpd-list select { padding: 0.4rem 1.5rem 0.4rem 0.5rem; }

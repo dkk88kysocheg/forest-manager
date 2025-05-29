@@ -1,0 +1,71 @@
+
+/**
+ * Оформлениие кнопки загрузки документа
+ */
+#addDeleteFileContractModal .block { 
+	min-height: 150px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#addDeleteFileContractModal .input-file {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border: 1px dashed #c9c9c9;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#addDeleteFileContractModal .input-file i { height: 34px; }
+
+#addDeleteFileContractModal .input-file-btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle; 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.875rem 2.5rem;
+	font-size: 0.875rem;
+	line-height: 1;
+	border-radius: 0.1875rem;
+	-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    background-color: #1bdbe0;
+    border-color: #1bdbe0;
+}
+#addDeleteFileContractModal .input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+#addDeleteFileContractModal .input-file input[type=file]:focus + .input-file-btn {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+#addDeleteFileContractModal .input-file:hover .input-file-btn {
+	background-color: #17babe;
+    border-color: #16afb2;
+}
+#addDeleteFileContractModal .input-file:active .input-file-btn {
+	background-color: #16afb2;
+    border-color: #14a3a7;
+}
